@@ -23,15 +23,15 @@ const Title = styled.h2`
 `;
 
 interface IProps {
-    title: string;
-    backTo?: string;
+  title: string;
+  backTo?: string;
 }
 
 const Header: React.SFC<IProps> = ({ title, backTo }) => (
-    <Container>
-        {backTo && <BackArrow backTo={backTo} />}
-        <Title>{title}</Title>
-    </Container>
+  <Container>
+    {backTo && <BackArrow backTo={backTo} />}
+    <Title>{title}</Title>
+  </Container>
 );
 
 export default Header;
